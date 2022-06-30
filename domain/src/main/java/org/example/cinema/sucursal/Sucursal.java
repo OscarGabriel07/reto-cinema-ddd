@@ -1,6 +1,7 @@
 package org.example.cinema.sucursal;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import org.example.cinema.factura.values.Nombre;
 import org.example.cinema.sucursal.entities.Fila;
 import org.example.cinema.sucursal.entities.Pantalla;
@@ -9,6 +10,7 @@ import org.example.cinema.sucursal.entities.Taquillero;
 import org.example.cinema.sucursal.events.*;
 import org.example.cinema.sucursal.values.*;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -27,6 +29,12 @@ public class Sucursal extends AggregateEvent<SucursalId> {
     private Sucursal(SucursalId sucursalId){
         super(sucursalId);
         subscribe(new SucursalChange(this));
+    }
+
+    public static Sucursal from(SucursalId sucursalId, List<DomainEvent> events){
+        var sucursal = new Sucursal(sucursalId);
+        events.forEach(sucursal::applyEvent);
+        return sucursal;
     }
 
     public void agregarPantalla(PantallaId entityId, Estado estado){
