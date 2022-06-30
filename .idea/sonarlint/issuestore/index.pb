@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
->
-domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
 p
 @domain/src/main/java/org/example/cinema/sala/entities/Silla.java,f\9\f92e2d977b9d94dff093eaf66cbc3e81cde74427
 
@@ -13,8 +11,6 @@ Ldomain/src/main/java/org/example/cinema/sala/events/PeliculaReproducida.java,5
 Ndomain/src/main/java/org/example/cinema/sala/events/EncargadoSalaAsignado.java,0\d\0dbee63d59c5db9b97392e151c2314ec98ea05dc
 x
 Hdomain/src/main/java/org/example/cinema/sala/entities/EncargadoSala.java,5\d\5dcc362819970906d56737ab26c7d3c45ebaeb00
-s
-Cdomain/src/main/java/org/example/cinema/sala/events/SalaCreada.java,6\9\693eac0d8f1dae4ab15e2b020ad9cec82a8570c6
 ‹
 [domain/src/main/java/org/example/cinema/sala/events/NombreDeEncargadoDeSalaActualizado.java,0\1\016c0daedf6329e33c586e136e1afb99182cd173
 u
