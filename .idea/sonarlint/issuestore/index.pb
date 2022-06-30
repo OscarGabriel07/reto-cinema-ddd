@@ -27,10 +27,6 @@ Cdomain/src/main/java/org/example/cinema/sala/entities/Pelicula.java,9\f\9f0114
 Qdomain/src/main/java/org/example/cinema/factura/events/NombreClienteCambiado.java,a\6\a648b8ad386ddd050d1d1728090c805762e87353
 Š
 Zdomain/src/main/java/org/example/cinema/factura/events/DescripcionDeTicketActualizada.java,f\c\fc3a7f2734255061e0e1f10b9dd1566c88aadd04
-€
-Pdomain/src/main/java/org/example/cinema/factura/events/TotalAPagarCalculado.java,5\b\5bdb6bcc9d7f24dc758e160cac159e2913c30485
-z
-Jdomain/src/main/java/org/example/cinema/factura/events/TicketAgregado.java,4\5\45f56794ba1aabee6ef4ca4bfebdbba118ec2119
 {
 Kdomain/src/main/java/org/example/cinema/factura/events/ClienteCambiado.java,e\8\e8bc8bb29bf0e5a5b3b835d15cbac25b23dc70ef
 y

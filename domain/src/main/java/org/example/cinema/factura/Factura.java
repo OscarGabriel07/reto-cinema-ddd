@@ -39,10 +39,6 @@ public class Factura extends AggregateEvent<FacturaId> {
         appendChange(new TicketAgregado(entityId, descripcion, valor, fechaImpresion)).apply();
     }
 
-    public void calcularTotalAPagar(){
-        appendChange(new TotalAPagarCalculado()).apply();
-    }
-
     public void cambiarCliente(Cliente cliente){
         appendChange(new ClienteCambiado(cliente)).apply();
     }
@@ -76,5 +72,9 @@ public class Factura extends AggregateEvent<FacturaId> {
 
     public Valor valor() {
         return valor;
+    }
+
+    public void setValor(Valor valor) {
+        this.valor = valor;
     }
 }

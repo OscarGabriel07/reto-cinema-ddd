@@ -8,6 +8,7 @@ import org.example.cinema.factura.values.Valor;
 import java.util.HashSet;
 
 public class FacturaChange extends EventChange {
+
     public FacturaChange(Factura factura) {
 
         apply((FacturaCreada event) -> {
@@ -32,16 +33,16 @@ public class FacturaChange extends EventChange {
                     event.getValor(),
                     event.getFechaImpresion()
             ));
+            Integer totalFactura = factura.valor.value();
+            Integer precioTicket = event.getValor().value();
+            totalFactura += precioTicket;
+            factura.setValor(new Valor(totalFactura));
         });
 
         apply((DescripcionDeTicketActualizada event) -> {
             var ticket = factura.getTicketPorId(event.getTicketId())
                     .orElseThrow(() -> new IllegalArgumentException("No se encuentra el ticket de la factura"));
             ticket.actualizarDescripcion(event.getDescripcion());
-        });
-
-        apply((TotalAPagarCalculado event) -> {
-            //TODO: hacer método para calcular el valor total de la factura
         });
 
     }
