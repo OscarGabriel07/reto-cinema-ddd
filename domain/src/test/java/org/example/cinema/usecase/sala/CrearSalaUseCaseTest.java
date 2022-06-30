@@ -1,4 +1,4 @@
-package org.example.cinema.usecase.sucursal;
+package org.example.cinema.usecase.sala;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
@@ -8,6 +8,7 @@ import org.example.cinema.sala.entities.Silla;
 import org.example.cinema.sala.events.SalaCreada;
 import org.example.cinema.sala.values.Capacidad;
 import org.example.cinema.sala.values.SalaId;
+import org.example.cinema.usecase.sala.CrearSalaUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

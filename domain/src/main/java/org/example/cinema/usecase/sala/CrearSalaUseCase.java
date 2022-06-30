@@ -1,4 +1,4 @@
-package org.example.cinema.usecase.sucursal;
+package org.example.cinema.usecase.sala;
 
 import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
