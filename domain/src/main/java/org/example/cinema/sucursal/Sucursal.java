@@ -53,21 +53,21 @@ public class Sucursal extends AggregateEvent<SucursalId> {
         appendChange(new TaquillaCreada(entityId, taquillero)).apply();
     }
 
-    public Optional<Pantalla> getPantallaPorId(PantallaId pantallaId){
+    private Optional<Pantalla> getPantallaPorId(PantallaId pantallaId){
         return pantallas
                 .stream()
                 .filter(pantalla -> pantalla.identity().equals(pantallaId))
                 .findFirst();
     }
 
-    public Optional<Fila> getFilaPorId(FilaId filaId){
+    private Optional<Fila> getFilaPorId(FilaId filaId){
         return filas
                 .stream()
                 .filter(fila -> fila.identity().equals(filaId))
                 .findFirst();
     }
 
-    public Optional<Taquilla> getTaquillaPorId(TaquillaId taquillaId){
+    private Optional<Taquilla> getTaquillaPorId(TaquillaId taquillaId){
         return taquillas
                 .stream()
                 .filter(taquilla -> taquilla.identity().equals(taquillaId))

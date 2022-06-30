@@ -55,7 +55,7 @@ public class Factura extends AggregateEvent<FacturaId> {
         appendChange(new NombreClienteCambiado(cliente, nombre)).apply();
     }
 
-    public Optional<Ticket> getTicketPorId(TicketId ticketId){
+    protected Optional<Ticket> getTicketPorId(TicketId ticketId){
         return tickets()
                 .stream()
                 .filter(ticket -> ticket.identity().equals(ticketId))

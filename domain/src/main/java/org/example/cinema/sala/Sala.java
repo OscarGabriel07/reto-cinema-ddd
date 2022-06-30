@@ -71,7 +71,7 @@ public class Sala extends AggregateEvent<SalaId> {
         appendChange(new NombreDeEncargadoDeSalaActualizado(nombre)).apply();
     }
 
-    public Optional<Silla> getSillaPorId(SillaId sillaId){
+    protected Optional<Silla> getSillaPorId(SillaId sillaId){
         return sillas()
                 .stream()
                 .filter(silla -> silla.identity().equals(sillaId))
