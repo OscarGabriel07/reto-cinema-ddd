@@ -13,8 +13,6 @@ x
 Hdomain/src/main/java/org/example/cinema/sala/entities/EncargadoSala.java,5\d\5dcc362819970906d56737ab26c7d3c45ebaeb00
 ‹
 [domain/src/main/java/org/example/cinema/sala/events/NombreDeEncargadoDeSalaActualizado.java,0\1\016c0daedf6329e33c586e136e1afb99182cd173
-u
-Edomain/src/main/java/org/example/cinema/factura/entities/Cliente.java,3\6\36f4059cb309ba4bfc52fe674354b2e4cc32dcd4
 y
 Idomain/src/main/java/org/example/cinema/sala/events/PeliculaAsignada.java,7\6\761c5fb5b472b22217d1ac6ea04c5659a3c606e6
 s
@@ -27,8 +25,6 @@ Zdomain/src/main/java/org/example/cinema/factura/events/DescripcionDeTicketActua
 Kdomain/src/main/java/org/example/cinema/factura/events/ClienteCambiado.java,e\8\e8bc8bb29bf0e5a5b3b835d15cbac25b23dc70ef
 y
 Idomain/src/main/java/org/example/cinema/sala/events/SucursalAsociada.java,b\9\b90cf01c940e28866ed9e393c95e5d20789b97b6
-y
-Idomain/src/main/java/org/example/cinema/factura/events/FacturaCreada.java,4\a\4aeacf32c69372769d4483420a7948db17ce6f22
 t
 Ddomain/src/main/java/org/example/cinema/factura/entities/Ticket.java,f\3\f3d91930b9a61cb4651148f748356bddb257dfc0
 {

@@ -39,7 +39,7 @@ class CrearSalaUseCaseTest {
         SalaCreada event = (SalaCreada) events.get(0);
 
         Assertions.assertEquals(25, event.getCapacidad().value());
-        Assertions.assertEquals(sillas, event.getSillas());
+        Assertions.assertEquals(new HashSet<>().size(), event.getSillas().size());
     }
 
 }
