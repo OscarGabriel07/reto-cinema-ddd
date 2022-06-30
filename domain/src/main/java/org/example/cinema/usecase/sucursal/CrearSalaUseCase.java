@@ -6,7 +6,7 @@ import co.com.sofka.business.support.ResponseEvents;
 import org.example.cinema.sala.Sala;
 import org.example.cinema.sala.commands.CrearSala;
 
-public class SalaCreadaUseCase extends UseCase<RequestCommand<CrearSala>, ResponseEvents> {
+public class CrearSalaUseCase extends UseCase<RequestCommand<CrearSala>, ResponseEvents> {
     @Override
     public void executeUseCase(RequestCommand<CrearSala> crearSalaRequestCommand) {
 

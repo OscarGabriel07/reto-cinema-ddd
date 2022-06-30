@@ -6,10 +6,8 @@ import co.com.sofka.domain.generic.DomainEvent;
 import org.example.cinema.sala.commands.CrearSala;
 import org.example.cinema.sala.entities.Silla;
 import org.example.cinema.sala.events.SalaCreada;
-import org.example.cinema.sala.values.Anchura;
 import org.example.cinema.sala.values.Capacidad;
 import org.example.cinema.sala.values.SalaId;
-import org.example.cinema.sala.values.SillaId;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -29,7 +27,7 @@ class CrearSalaUseCaseTest {
 
         var command = new CrearSala(id, capacidad, sillas);
 
-        var useCase = new SalaCreadaUseCase();
+        var useCase = new CrearSalaUseCase();
 
         //act
         List<DomainEvent> events = UseCaseHandler.getInstance()
