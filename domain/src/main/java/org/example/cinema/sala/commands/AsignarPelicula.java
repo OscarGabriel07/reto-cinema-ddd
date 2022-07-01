@@ -7,6 +7,7 @@ public class AsignarPelicula extends Command {
 
     private final SalaId salaId;
     private final PeliculaId entityId;
+    private final Genero genero;
     private final Idioma idioma;
     private final Duracion duracion;
 
@@ -14,6 +15,7 @@ public class AsignarPelicula extends Command {
 
         this.salaId = salaId;
         this.entityId = entityId;
+        this.genero = genero;
         this.idioma = idioma;
         this.duracion = duracion;
     }
@@ -24,6 +26,10 @@ public class AsignarPelicula extends Command {
 
     public PeliculaId getEntityId() {
         return entityId;
+    }
+
+    public Genero getGenero() {
+        return genero;
     }
 
     public Idioma getIdioma() {

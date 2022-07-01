@@ -11,8 +11,6 @@ x
 Hdomain/src/main/java/org/example/cinema/sala/entities/EncargadoSala.java,5\d\5dcc362819970906d56737ab26c7d3c45ebaeb00
 ã
 [domain/src/main/java/org/example/cinema/sala/events/NombreDeEncargadoDeSalaActualizado.java,0\1\016c0daedf6329e33c586e136e1afb99182cd173
-y
-Idomain/src/main/java/org/example/cinema/sala/events/PeliculaAsignada.java,7\6\761c5fb5b472b22217d1ac6ea04c5659a3c606e6
 s
 Cdomain/src/main/java/org/example/cinema/sala/entities/Pelicula.java,9\f\9f0114719a7affc2150da1bd78303fdf1c865832
 Å
