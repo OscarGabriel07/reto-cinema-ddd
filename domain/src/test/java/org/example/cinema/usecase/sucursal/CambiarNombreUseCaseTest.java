@@ -19,7 +19,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -34,11 +33,10 @@ class CambiarNombreUseCaseTest {
     @Test
     void cambiarNombreSucursal(){
 
-        //arrange
-        var id = SucursalId.of("Sucursal1");
-        String nombreSucursal = "Plaza Central";
-        var command = new CambiarNombre(id, new NombreSucursal(nombreSucursal));
-        when(repository.getEventsBy(id.value())).thenReturn(history());
+        SucursalId sucursalId = SucursalId.of("1");
+        NombreSucursal nombreSucursal = new NombreSucursal("Plaza Central");
+        var command = new CambiarNombre(sucursalId, nombreSucursal);
+        when(repository.getEventsBy(sucursalId.value())).thenReturn(history());
         useCase.addRepository(repository);
 
         //act
@@ -49,14 +47,16 @@ class CambiarNombreUseCaseTest {
 
         //assert
         var event = (NombreCambiado) events.get(0);
-        Assertions.assertEquals("Plaza Central", event.getNombre());
+        Assertions.assertEquals("Plaza Central", event.getNombre().value());
     }
 
     private List<DomainEvent> history() {
-        var nombreSucursal = new NombreSucursal("Plaza de las Américas");
-        var direccion = new Direccion("Avenida Primero de Mayo 78 - 34");
+        SucursalId sucursalId = SucursalId.of("1");
+        NombreSucursal nombreSucursal = new NombreSucursal("Plaza de las Américas");
+        Direccion direccion = new Direccion("Avenida Primero de Mayo 78 - 34");
+
         return List.of(
-                new SucursalCreada(nombreSucursal, direccion)
+                new SucursalCreada(sucursalId, nombreSucursal, direccion)
         );
     }
 

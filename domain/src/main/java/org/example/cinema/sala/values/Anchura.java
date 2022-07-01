@@ -18,6 +18,10 @@ public class Anchura implements ValueObject<Integer> {
         }
     }
 
+    public Anchura cambiarAnchura(Integer anchuraCambiar){
+        return new Anchura(anchuraCambiar);
+    }
+
     @Override
     public Integer value() {
         return value;

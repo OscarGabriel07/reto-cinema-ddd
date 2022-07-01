@@ -15,6 +15,10 @@ public class Valor implements ValueObject<Integer> {
         }
     }
 
+    public Valor modificarValor(Integer valorModificar){
+        return new Valor(valorModificar);
+    }
+
     @Override
     public Integer value() {
         return value;

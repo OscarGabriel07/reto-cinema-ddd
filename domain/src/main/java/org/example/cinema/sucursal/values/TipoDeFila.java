@@ -15,6 +15,10 @@ public class TipoDeFila implements ValueObject<String> {
         }
     }
 
+    public TipoDeFila modificarTipoDeFila(String tipoDefilaModificar){
+        return new TipoDeFila(tipoDefilaModificar);
+    }
+
     @Override
     public String value() {
         return value;

@@ -20,7 +20,7 @@ public class SucursalChange extends EventChange {
         });
 
         apply((NombreCambiado event) -> {
-            sucursal.cambiarNombre(event.getNombre());
+            sucursal.cambiarNombre(event.getNombre().value());
         });
 
         apply((PantallaAgregada event) -> {

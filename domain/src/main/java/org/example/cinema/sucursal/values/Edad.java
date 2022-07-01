@@ -21,6 +21,10 @@ public class Edad implements ValueObject<Integer> {
         }
     }
 
+    public Edad actualizarEdad(Integer edadActualizar){
+        return new Edad(edadActualizar);
+    }
+
     @Override
     public Integer value() {
         return value;

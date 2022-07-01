@@ -18,6 +18,10 @@ public class NombreTaquillero implements ValueObject<String> {
         }
     }
 
+    public NombreTaquillero modificarNombreTaquillero(String nombreTaquilleroModificar){
+        return new NombreTaquillero(nombreTaquilleroModificar);
+    }
+
     @Override
     public String value() {
         return value;

@@ -18,6 +18,10 @@ public class Direccion implements ValueObject<String> {
         }
     }
 
+    public Direccion actualizarDireccion(String direccionActualizar){
+        return new Direccion(direccionActualizar);
+    }
+
     @Override
     public String value() {
         return value;

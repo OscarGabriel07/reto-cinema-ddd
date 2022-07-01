@@ -18,6 +18,10 @@ public class Genero implements ValueObject<String> {
         }
     }
 
+    public Genero modificarGenero(String generoModificar){
+        return new Genero(generoModificar);
+    }
+
     @Override
     public String value() {
         return value;

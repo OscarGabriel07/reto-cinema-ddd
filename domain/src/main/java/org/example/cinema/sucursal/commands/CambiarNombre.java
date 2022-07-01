@@ -10,7 +10,6 @@ public class CambiarNombre extends Command {
     private final NombreSucursal nombreSucursal;
 
     public CambiarNombre(SucursalId sucursalId, NombreSucursal nombreSucursal){
-
         this.sucursalId = sucursalId;
         this.nombreSucursal = nombreSucursal;
     }

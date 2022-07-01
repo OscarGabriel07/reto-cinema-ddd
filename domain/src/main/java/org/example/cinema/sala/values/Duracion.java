@@ -15,6 +15,10 @@ public class Duracion implements ValueObject<Integer> {
         }
     }
 
+    public Duracion actualizarDuracion(Integer duracionActualizar){
+        return new Duracion(duracionActualizar);
+    }
+
     @Override
     public Integer value() {
         return value;

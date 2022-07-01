@@ -1,6 +1,7 @@
 package org.example.cinema.sucursal.values;
 
 import co.com.sofka.domain.generic.ValueObject;
+import org.example.cinema.factura.values.Nombre;
 
 import java.util.Objects;
 
@@ -16,6 +17,10 @@ public class NombreSucursal implements ValueObject<String>{
         if(this.value.length() <= 3){
             throw new IllegalArgumentException("El nombre de la sucursal debe tener más de 3 caracteres");
         }
+    }
+
+    public NombreSucursal cambiarNombreSucursal(String nombreSucursalModificar){
+        return new NombreSucursal(nombreSucursalModificar);
     }
 
     @Override

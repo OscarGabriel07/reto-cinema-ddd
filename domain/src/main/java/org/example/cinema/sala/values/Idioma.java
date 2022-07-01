@@ -18,6 +18,10 @@ public class Idioma implements ValueObject<String> {
         }
     }
 
+    public Idioma modificarIdioma(String idiomaModificar){
+        return new Idioma(idiomaModificar);
+    }
+
     @Override
     public String value() {
         return value;

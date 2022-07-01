@@ -15,7 +15,7 @@ public class FacturaChange extends EventChange {
             factura.sucursalId = event.getSucursalId();
             factura.cliente = event.getCliente();
             factura.tickets = new HashSet<>();
-            factura.valor.value();
+            factura.valor = new Valor(0);
         });
 
         apply((ClienteCambiado event) -> {

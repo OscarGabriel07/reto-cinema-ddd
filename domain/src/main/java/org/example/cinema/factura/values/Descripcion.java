@@ -18,6 +18,10 @@ public class Descripcion implements ValueObject<String> {
         }
     }
 
+    public Descripcion actualizarDescripcion(String descripcionActualizar){
+        return new Descripcion(descripcionActualizar);
+    }
+
     @Override
     public String value() {
         return value;

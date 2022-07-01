@@ -15,7 +15,7 @@ public class CambiarNombreUseCase extends UseCase<RequestCommand<CambiarNombre>,
                 command.getSucursalId(), repository().getEventsBy(command.getSucursalId().value())
         );
 
-        sucursal.cambiarNombre(command.getNombre());
+        sucursal.cambiarNombreSucursal(command.getSucursalId(), command.getNombre());
 
         emit().onResponse(new ResponseEvents(sucursal.getUncommittedChanges()));
 

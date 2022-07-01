@@ -18,6 +18,10 @@ public class Capacidad implements ValueObject<Integer> {
         }
     }
 
+    public Capacidad actualizarCapacidad(Integer capacidadActualizar){
+        return new Capacidad(capacidadActualizar);
+    }
+
     @Override
     public Integer value() {
         return value;

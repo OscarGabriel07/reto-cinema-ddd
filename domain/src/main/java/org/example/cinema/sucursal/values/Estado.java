@@ -15,6 +15,10 @@ public class Estado implements ValueObject<Boolean> {
         }
     }
 
+    public Estado cambiarEstado(Boolean estadoCambiar){
+        return new Estado(estadoCambiar);
+    }
+
     @Override
     public Boolean value() {
         return value;

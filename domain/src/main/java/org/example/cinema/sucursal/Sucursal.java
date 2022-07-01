@@ -22,7 +22,7 @@ public class Sucursal extends AggregateEvent<SucursalId> {
 
     public Sucursal(SucursalId entityId, NombreSucursal nombreSucursal, Direccion direccion) {
         super(entityId);
-        appendChange(new SucursalCreada(nombreSucursal, direccion)).apply();
+        appendChange(new SucursalCreada(entityId, nombreSucursal, direccion)).apply();
     }
 
     private Sucursal(SucursalId sucursalId){
@@ -44,8 +44,12 @@ public class Sucursal extends AggregateEvent<SucursalId> {
         appendChange(new FilaAgregada(entityId, tipoDeFila)).apply();
     }
 
-    public void cambiarNombre(NombreSucursal nombreSucursal){
-        appendChange(new NombreCambiado(nombreSucursal)).apply();
+    public void cambiarNombreSucursal(SucursalId sucursalId, NombreSucursal nombreSucursal){
+        appendChange(new NombreCambiado(sucursalId, nombreSucursal)).apply();
+    }
+
+    public void cambiarNombre(String nombreSucursalModificar){
+        this.nombreSucursal = nombreSucursal.cambiarNombreSucursal(nombreSucursalModificar);
     }
 
     public void agregarTaquilla(TaquillaId entityId, Taquillero taquillero){
