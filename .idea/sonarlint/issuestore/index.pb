@@ -42,8 +42,6 @@ Sdomain/src/main/java/org/example/cinema/sala/commands/CambiarAnchuraDeUnaSilla.
 }
 Mdomain/src/main/java/org/example/cinema/sala/commands/ReproducirPelicula.java,3\f\3fa2393417f38d5fb027ec8c6253d00b56436ce9
 z
-Jdomain/src/main/java/org/example/cinema/sala/commands/AsociarSucursal.java,a\7\a7a747f5942fd78881ca32b9ce12b5e8627199a0
-z
 Jdomain/src/main/java/org/example/cinema/sucursal/commands/AgregarFila.java,c\4\c4e10420776c30411f5c01c126ea18cac5debf78
 ~
 Ndomain/src/main/java/org/example/cinema/sucursal/commands/AgregarTaquilla.java,6\3\63d8189cb108a77dade23fa9a2d3826d2c5bb0a8
@@ -83,8 +81,6 @@ t
 Ddomain/src/main/java/org/example/cinema/sala/commands/CrearSala.java,d\f\dfe1b58d45f07889c63533f6e4c24e225be3ce50
 z
 Jdomain/src/main/java/org/example/cinema/usecase/sala/CrearSalaUseCase.java,f\c\fc2b16474de7fc0843356740c578c0750de2a185
-s
-Cdomain/src/main/java/org/example/cinema/sala/events/SalaCreada.java,6\9\693eac0d8f1dae4ab15e2b020ad9cec82a8570c6
 z
 Jdomain/src/main/java/org/example/cinema/factura/commands/CrearFactura.java,0\e\0e4e036070cad7be262640fbcf19d3080c6762d6
 w
@@ -123,5 +119,3 @@ Idomain/src/main/java/org/example/cinema/sala/events/PeliculaAsignada.java,7\6\
 Udomain/src/main/java/org/example/cinema/usecase/sala/AsignarEncargadoSalaUseCase.java,2\7\2718e44b3a19a6d0fe68ce2009b96d392797f3a1
 €
 Pdomain/src/main/java/org/example/cinema/usecase/sala/AsignarPeliculaUseCase.java,0\6\06bde8eca59178a58675c5e6a31c81b5bc3cad52
-€
-Pdomain/src/main/java/org/example/cinema/usecase/sala/AsociarSucursalUseCase.java,8\7\8780b19e7692c74a26b958b44e76f5b8fed9c5db
