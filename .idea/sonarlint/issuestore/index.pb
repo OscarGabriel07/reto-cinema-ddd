@@ -7,8 +7,6 @@ p
 Odomain/src/main/java/org/example/cinema/sala/events/AnchuraDeSillaCambiada.java,8\5\856f02bb445ec81224437aaa37cd9f529c3f1876
 |
 Ldomain/src/main/java/org/example/cinema/sala/events/PeliculaReproducida.java,5\8\580b20c2ca2cc89fec4a1b9c67cb027a93e17acb
-~
-Ndomain/src/main/java/org/example/cinema/sala/events/EncargadoSalaAsignado.java,0\d\0dbee63d59c5db9b97392e151c2314ec98ea05dc
 x
 Hdomain/src/main/java/org/example/cinema/sala/entities/EncargadoSala.java,5\d\5dcc362819970906d56737ab26c7d3c45ebaeb00
 ‹
