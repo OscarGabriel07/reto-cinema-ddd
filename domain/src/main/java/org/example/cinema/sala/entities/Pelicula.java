@@ -16,7 +16,7 @@ public class Pelicula extends Entity<PeliculaId> {
         this.genero = genero;
         this.idioma = idioma;
         this.duracion = duracion;
-        this.tiempoTranscurrido.value();
+        this.tiempoTranscurrido = new TiempoTranscurrido(0);
     }
 
     public void cambiarGenero(Genero genero){

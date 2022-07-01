@@ -11,8 +11,6 @@ x
 Hdomain/src/main/java/org/example/cinema/sala/entities/EncargadoSala.java,5\d\5dcc362819970906d56737ab26c7d3c45ebaeb00
 ã
 [domain/src/main/java/org/example/cinema/sala/events/NombreDeEncargadoDeSalaActualizado.java,0\1\016c0daedf6329e33c586e136e1afb99182cd173
-s
-Cdomain/src/main/java/org/example/cinema/sala/entities/Pelicula.java,9\f\9f0114719a7affc2150da1bd78303fdf1c865832
 Å
 Qdomain/src/main/java/org/example/cinema/factura/events/NombreClienteCambiado.java,a\6\a648b8ad386ddd050d1d1728090c805762e87353
 {
@@ -111,11 +109,7 @@ Tdomain/src/main/java/org/example/cinema/usecase/sucursal/AgregarPantallaUseCase
 Zdomain/src/main/java/org/example/cinema/factura/events/DescripcionDeTicketActualizada.java,f\c\fc3a7f2734255061e0e1f10b9dd1566c88aadd04
 ~
 Ndomain/src/main/java/org/example/cinema/sala/events/EncargadoSalaAsignado.java,0\d\0dbee63d59c5db9b97392e151c2314ec98ea05dc
-z
-Jdomain/src/main/java/org/example/cinema/sala/commands/AsignarPelicula.java,9\c\9cddc825a2c30753b515f371ad5cbd98649040f0
 y
 Idomain/src/main/java/org/example/cinema/sala/events/PeliculaAsignada.java,7\6\761c5fb5b472b22217d1ac6ea04c5659a3c606e6
 Ö
 Udomain/src/main/java/org/example/cinema/usecase/sala/AsignarEncargadoSalaUseCase.java,2\7\2718e44b3a19a6d0fe68ce2009b96d392797f3a1
-Ä
-Pdomain/src/main/java/org/example/cinema/usecase/sala/AsignarPeliculaUseCase.java,0\6\06bde8eca59178a58675c5e6a31c81b5bc3cad52
