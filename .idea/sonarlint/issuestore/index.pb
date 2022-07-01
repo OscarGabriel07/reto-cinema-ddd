@@ -28,6 +28,4 @@ Idomain/src/main/java/org/example/cinema/sala/events/SucursalAsociada.java,b\9\
 t
 Ddomain/src/main/java/org/example/cinema/factura/entities/Ticket.java,f\3\f3d91930b9a61cb4651148f748356bddb257dfc0
 {
-Kdomain/src/main/java/org/example/cinema/sucursal/events/SucursalCreada.java,8\d\8d21335a825213e6c93e7eb029c45ef952e1e5c3
-{
 Kdomain/src/main/java/org/example/cinema/sucursal/events/NombreCambiado.java,e\6\e6b433a80a9e508c9c9c2a47a79a9fa5a23d19ae
