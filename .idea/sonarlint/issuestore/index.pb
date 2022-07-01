@@ -19,8 +19,6 @@ s
 Cdomain/src/main/java/org/example/cinema/sala/entities/Pelicula.java,9\f\9f0114719a7affc2150da1bd78303fdf1c865832
 Å
 Qdomain/src/main/java/org/example/cinema/factura/events/NombreClienteCambiado.java,a\6\a648b8ad386ddd050d1d1728090c805762e87353
-ä
-Zdomain/src/main/java/org/example/cinema/factura/events/DescripcionDeTicketActualizada.java,f\c\fc3a7f2734255061e0e1f10b9dd1566c88aadd04
 {
 Kdomain/src/main/java/org/example/cinema/factura/events/ClienteCambiado.java,e\8\e8bc8bb29bf0e5a5b3b835d15cbac25b23dc70ef
 y
