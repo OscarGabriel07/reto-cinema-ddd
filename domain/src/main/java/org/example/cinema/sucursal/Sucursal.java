@@ -45,8 +45,8 @@ public class Sucursal extends AggregateEvent<SucursalId> {
         appendChange(new FilaAgregada(entityId, tipoDeFila)).apply();
     }
 
-    public void cambiarNombre(Nombre nombre){
-        appendChange(new NombreCambiado(nombre)).apply();
+    public void cambiarNombre(NombreSucursal nombreSucursal){
+        appendChange(new NombreCambiado(nombreSucursal)).apply();
     }
 
     public void agregarTaquilla(TaquillaId entityId, Taquillero taquillero){

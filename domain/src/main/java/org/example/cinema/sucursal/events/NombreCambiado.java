@@ -2,16 +2,17 @@ package org.example.cinema.sucursal.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import org.example.cinema.factura.values.Nombre;
+import org.example.cinema.sucursal.values.NombreSucursal;
 
 public class NombreCambiado extends DomainEvent {
-    private final Nombre nombre;
+    private final NombreSucursal nombreSucursal;
 
-    public NombreCambiado(Nombre nombre) {
+    public NombreCambiado(NombreSucursal nombreSucursal) {
         super("org.example.cinema.NombreCambiado");
-        this.nombre = nombre;
+        this.nombreSucursal = nombreSucursal;
     }
 
-    public Nombre getNombre() {
-        return nombre;
+    public NombreSucursal getNombre() {
+        return nombreSucursal;
     }
 }

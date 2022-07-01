@@ -1,25 +1,25 @@
 package org.example.cinema.sucursal.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.example.cinema.factura.values.Nombre;
+import org.example.cinema.sucursal.values.NombreSucursal;
 import org.example.cinema.sucursal.values.SucursalId;
 
 public class CambiarNombre extends Command {
 
     private final SucursalId sucursalId;
-    private final Nombre nombre;
+    private final NombreSucursal nombreSucursal;
 
-    public CambiarNombre(SucursalId sucursalId, Nombre nombre){
+    public CambiarNombre(SucursalId sucursalId, NombreSucursal nombreSucursal){
 
         this.sucursalId = sucursalId;
-        this.nombre = nombre;
+        this.nombreSucursal = nombreSucursal;
     }
 
     public SucursalId getSucursalId() {
         return sucursalId;
     }
 
-    public Nombre getNombre() {
-        return nombre;
+    public NombreSucursal getNombre() {
+        return nombreSucursal;
     }
 }
