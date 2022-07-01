@@ -37,7 +37,7 @@ public class SucursalChange extends EventChange {
             ));
         });
 
-        apply((TaquillaCreada event) -> {
+        apply((TaquillaAgregada event) -> {
             sucursal.taquillas.add(new Taquilla(
                     event.getEntityId(),
                     event.getTaquillero()

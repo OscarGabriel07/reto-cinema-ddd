@@ -2,7 +2,6 @@ package org.example.cinema.sucursal;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import org.example.cinema.factura.values.Nombre;
 import org.example.cinema.sucursal.entities.Fila;
 import org.example.cinema.sucursal.entities.Pantalla;
 import org.example.cinema.sucursal.entities.Taquilla;
@@ -50,7 +49,7 @@ public class Sucursal extends AggregateEvent<SucursalId> {
     }
 
     public void agregarTaquilla(TaquillaId entityId, Taquillero taquillero){
-        appendChange(new TaquillaCreada(entityId, taquillero)).apply();
+        appendChange(new TaquillaAgregada(entityId, taquillero)).apply();
     }
 
     private Optional<Pantalla> getPantallaPorId(PantallaId pantallaId){
