@@ -45,7 +45,7 @@ public class SalaChange extends EventChange{
         });
 
         apply((NombreDeEncargadoDeSalaActualizado event) -> {
-            sala.encargadoSala.modificarNombre(event.getNombre());
+            sala.encargadoSala.modificarNombre(event.getNombre().value());
         });
 
         apply((AnchuraDeSillaCambiada event) -> {

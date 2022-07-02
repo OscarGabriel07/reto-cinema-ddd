@@ -28,8 +28,8 @@ public class EncargadoSala extends Entity<EncargadoSalaId> {
         this.fechaIncorporacion = Objects.requireNonNull(fechaIncorporacion);
     }
 
-    public void modificarNombre(Nombre nombre){
-        this.nombre = Objects.requireNonNull(nombre);
+    public void modificarNombre(String nombreModificar){
+        this.nombre = nombre.modificarNombre(nombreModificar);
     }
 
     public Nombre nombre() {
