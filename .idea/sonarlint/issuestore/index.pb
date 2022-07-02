@@ -33,8 +33,6 @@ Sdomain/src/main/java/org/example/cinema/sala/commands/CambiarAnchuraDeUnaSilla.
 Mdomain/src/main/java/org/example/cinema/sala/commands/ReproducirPelicula.java,3\f\3fa2393417f38d5fb027ec8c6253d00b56436ce9
 z
 Jdomain/src/main/java/org/example/cinema/sucursal/commands/AgregarFila.java,c\4\c4e10420776c30411f5c01c126ea18cac5debf78
-~
-Ndomain/src/main/java/org/example/cinema/sucursal/commands/AgregarTaquilla.java,6\3\63d8189cb108a77dade23fa9a2d3826d2c5bb0a8
 |
 Ldomain/src/main/java/org/example/cinema/factura/commands/CambiarCliente.java,6\1\61ed7be4bca68883d57e71c4c19eae2ecef7ba65
 ‚
@@ -79,8 +77,6 @@ Vdomain/src/test/java/org/example/cinema/usecase/sucursal/CrearSucursalUseCaseTe
 Ndomain/src/main/java/org/example/cinema/sucursal/commands/AgregarPantalla.java,b\9\b997f572892d2e75c8fffcd90d890525658e343d
 }
 Mdomain/src/main/java/org/example/cinema/sucursal/events/PantallaAgregada.java,a\0\a028ccefc57238b916c09d8329def2b57e62a985
-„
-Tdomain/src/main/java/org/example/cinema/usecase/sucursal/AgregarTaquillaUseCase.java,4\4\445eef7e795c932574f84dc7bb3c37f988e0a58e
 „
 Tdomain/src/main/java/org/example/cinema/usecase/sucursal/AgregarPantallaUseCase.java,1\9\19ef4ec9d211d8e65eefd34b50b76928ddc69ea6
 Š
